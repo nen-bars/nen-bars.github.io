@@ -10,6 +10,59 @@
     <meta name="description" content="невеличкий сайт про нен і її захоплення">
     <meta property="og:image" content="https://nen-bars.github.io/images/15.jpg">
     <link rel="shortcut icon" href="https://nen-bars.github.io/images/favicon.ico">
+    <style>
+     body {
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+      .card-container {
+            width: 80%;
+            height: 500px;
+            border: 1px solid rgb(59, 15, 192);
+            border-radius: 5px;
+            display: flex;
+        }
+
+       .cards {
+            position: relative;
+            left: 0;
+            width: 100px;
+            border-radius: 5px;
+            padding: 10px;
+            height: auto;
+            transition: .5s all;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+         
+         .cards:first-child {
+          background-image: none;
+        }
+
+        .cards:nth-child(2){
+          background-image: none;
+        }
+         .cards:nth-child(3){
+           background-image: none;
+        }
+        .cards:nth-child(4){
+          background-image: none;
+        }
+
+
+          .cards{
+            flex: 1;  cursor: pointer;
+          }
+          .cards:hover {
+            flex: 3;
+          }</style>
 </head>
 
 <body>
@@ -77,6 +130,15 @@
             </style>
         </li>
     </h3>
+<div class="card-container">
+    <div class="cards"><img src="images/10.jpg" width="500px"></div>
+    <div class="cards"><img src="images/11.jpg" width="500px"></div>
+    <div class="cards"><img src="images/12.jpg" width="500px"></div>
+    <div class="cards"><img src="images/13.jpg" width="500px"></div>
+
+</div>
+</div>
+    </body>
     <img src="images/10.jpg" width="49%">
     <img src="images/11.jpg" width="49%">
     <img src="images/12.jpg" width="49%">
