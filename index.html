@@ -12,6 +12,98 @@
     <link rel="shortcut icon" href="https://nen-bars.github.io/images/favicon.ico">
    
   <style>
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
     /* Style tab links */
 .tablink {
   background-color: #151f42;
@@ -37,8 +129,8 @@
   height: 100%;
 }
 
-#Home {background-color: #4c598a;}
-#Pets {background-color: #2b324f;}
+#Home {background-color: #2b324f;}
+#Pets {background-color: #4c598a;}
 #Facts {background-color: #313f75;}
 #Contact {background-color: #5f6fb0;}
  
@@ -95,8 +187,8 @@
 <body>
 
  
-<button class="tablink" onclick="openPage('Home', this, '#4c598a')">Про мене</button>
-<button class="tablink" onclick="openPage('Pets', this, '#2b324f')" id="defaultOpen">Армагедон</button>
+<button class="tablink" onclick="openPage('Home', this, '#2b324f')">Про мене</button>
+<button class="tablink" onclick="openPage('Pets', this, '4c598a')" id="defaultOpen">Армагедон</button>
 <button class="tablink" onclick="openPage('Facts', this, '#313f75')">Цікавинки</button>
 <button class="tablink" onclick="openPage('Contact', this, '#5f6fb0')">Зв'язочок</button>
 
@@ -104,10 +196,41 @@
   <h1>Хто така нен?</h1>
   <img src="images/1.jpg" width="100%">
   <p>Мені 18 років, родом я з-під Львова, точніше з військового містечка Ковирі, тому більшість моїх родичів військові.</p>
+  <img src="images/18.jpg" width="35%">
+  <img src="images/21.jpg" width="30%">
+  <img src="images/17.jpg" width="30%">
+  <center><img src="images/22.jpg" width="80%"></center>
+<center> <img src="images/16.jpg" width="39%">
+  <img src="images/19.jpg" width="35%">
+  <img src="images/20.jpg" width="20%"></center>
+<h3>Тільки тато та його сестра мали хист до малювання та музики, зокрема тітка навчалась в тому ж <a
+        href="https://www.artcollege.lviv.ua/" target="_blank">коледжі</a> де я. Гадаю творчістю пішла в них, тому
+    деякі мої хоббі:
+    <li>малювання</li>
+    <li>трохи грала на фортепіано та іноді опановую синтезатор</li>
+    <li>фото на випадково знайдену стару цифрову камеру </li>
+    <li>іноді шиття та в’язання невеликих речей</li>
+    <li> колись тато набивав сам собі татуювання і також маю тату-машинку</li>
+    <li>вчусь стрільби з професійного луку</li>
+    <li>працювала барменом/офіціантом, тому роблю непогані коктейлі</li>
+</h3>
+<img src="images/2.jpg" width="49%">
+<img src="images/3.jpg" width="49%">
+<img src="images/4.jpg" width="49%">
+<img src="images/5.jpg" width="49%"> <br> <br> <br>
+<h3>Ще одне моє головне хоббі це збирання гербарію і якихось шишок чи каштанів з різних лісів чи міст. Ось кілька
+    прикладів: </h3>
+<img src="images/6.jpg" width="49%">
+<img src="images/7.jpg" width="49%">
+<img src="images/8.jpg" width="49%">
+<img src="images/9.jpg" width="49%">
 </div>
+<style>
+   
+</style>
 
 <div id="Pets" class="tabcontent">
-  <h3>News</h3>
+  <h1>Також я дуже люблю тваринок і якось так сталось, що зі мною живе «чотири вершники апокаліпсису»:</h1>
   <p>Some news this fine day!</p> 
 </div>
 
@@ -282,6 +405,104 @@ document.getElementById("defaultOpen").click();
 
 </body>
 </html> 
+
+<h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="container">
+    <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="img_woods_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="img_5terre_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="img_mountains_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="img_lights_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="img_snow_wide.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)"
+                alt="Cinque Terre">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)"
+                alt="Mountains and fjords">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)"
+                alt="Northern Lights">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)"
+                alt="Nature and sunrise">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)"
+                alt="Snowy Mountains">
+        </div>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
 
 </body>
 
