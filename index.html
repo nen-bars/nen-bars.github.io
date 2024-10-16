@@ -11,6 +11,53 @@
     <meta property="og:image" content="https://nen-bars.github.io/images/15.jpg">
     <link rel="shortcut icon" href="https://nen-bars.github.io/images/favicon.ico">
 
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+    
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+    
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+    
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+    
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+    
+        .flip-card-back {
+            background-color: #7897d6;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+
 </head>
 
 <body>
@@ -48,41 +95,64 @@
     <img src="images/7.jpg" width="49%">
     <img src="images/8.jpg" width="49%">
     <img src="images/9.jpg" width="49%"> <br> <br>
-    <h3>Також я дуже люблю тваринок і якось так сталось, що зі мною живе «чотири вершники апокаліпсису»:
-        <li>чорна кішечка <a>Текіла</a>
-            <style>
-                a {
-                    color: #0d3ed0;
-                }
-            </style>
-        </li>
-        <li>гекон <a>Томі</a>
-            <style>
-                a {
-                    color: #0d3ed0;
-                }
-            </style>
-        </li>
-        <li>пан змій <a>Пабло Ескобар</a>
-            <style>
-                a {
-                    color: #0d3ed0;
-                }
-            </style>
-        </li>
-        <li>їжак-альбінос <a>Їжачиха</a>
-            <style>
-                a {
-                    color: #0d3ed0;
-                }
-            </style>
-        </li>
-    </h3>
+    <h3>Також я дуже люблю тваринок і якось так сталось, що зі мною живе «чотири вершники апокаліпсису»: </h3> <br>
+       
+    
+    
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/10.jpg" alt="Текіла" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Текіла</h1>
+                <p>Маленька чорна киця, що постійно робить армагедон. На її рахунку вбито більше трьох вазонків, одна розбита склянка та з'їджений жук-смердюк.</p>
+                <p>Їй всього лиш 3 місяці, а вже робить стільки шкоди, але всеодно її дуже люблю.</p>
+            </div>
+        </div>
+    </div> <br>
 
-    <img src="images/10.jpg" width="49%">
-    <img src="images/11.jpg" width="49%">
-    <img src="images/12.jpg" width="49%">
-    <img src="images/13.jpg" width="49%"> <br> <br>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/11.jpg" alt="Томі" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Томі</h1>
+                <p>Це війчастий гекон бананоїд Томі, або ще відомий як Томус, Томик та багато інших співкороневих слів.</p>
+                <p>Йому вже 3 роки, іноді ловить якісь хвилі з космосу і починає бігати туди сюди, одного разу заліз до стелі.</p>
+            </div>
+        </div>
+    </div> <br>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/12.jpg" alt="Пабло" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Пабло Ескобар</h1>
+                <p>Він відноситься до маїсових полозів, тому не отруйний та не кусається, якщо не відчуває небезпеки.</p>
+                <p>Переважно водяться в кукурудзяних полях Мексики, звідси його ім'я в честь
+                колумбійського наркобарона.</p>
+            </div>
+        </div>
+    </div> <br>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/13.jpg" alt="Їжачиха" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Їжачиха</h1>
+                <p>Найстарша жителька це альбінос Їжачишка, їй вже 6 років. Її якось купили дітям, яким через місяць вона набридла і її виставии на OLX, з надписом обміняю на фрукти, тому її ціна 2 кг бананів і 2 грейпфрута.
+                </p>
+                
+            </div>
+        </div>
+    </div> <br> <br>
+
     <h3>Кілька цікавих фактів про мене:
         <li>кілька років фарбуюсь в синій колір, скільки не пробувала інші кольори - завжди вертаюся до нього</li>
         <li>маю трохи східної крові, бабуся та дідусь родом з Узбекистану, мій тато також народився там у місті
