@@ -77,7 +77,7 @@ img {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: #2d1a5d;
   padding: 2px 16px;
   color: white;
 }
@@ -133,53 +133,7 @@ img {
 #Pets {background-color: #4c598a;}
 #Facts {background-color: #313f75;}
 #Contact {background-color: #5f6fb0;}
- 
-
-    <style>
     
-    
-        .flip-card {
-            background-color: transparent;
-            width: 320px;
-            height: 320px;
-            perspective: 1000px;
-            float: left;
-    
-        }
-    
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-    
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-    
-        .flip-card-front,
-        .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-    
-        .flip-card-front {
-            background-color: #bbb;
-            color: black;
-        }
-    
-        .flip-card-back {
-            background-color: #405b93;
-            color: white;
-            transform: rotateY(180deg);
-        }
     </style>
 
 </head>
@@ -188,7 +142,7 @@ img {
 
  
 <button class="tablink" onclick="openPage('Home', this, '#2b324f')">Про мене</button>
-<button class="tablink" onclick="openPage('Pets', this, '4c598a')" id="defaultOpen">Армагедон</button>
+<button class="tablink" onclick="openPage('Pets', this, '#4c598a')" id="defaultOpen">Армагедон</button>
 <button class="tablink" onclick="openPage('Facts', this, '#313f75')">Цікавинки</button>
 <button class="tablink" onclick="openPage('Contact', this, '#5f6fb0')">Зв'язочок</button>
 
@@ -231,7 +185,104 @@ img {
 
 <div id="Pets" class="tabcontent">
   <h1>Також я дуже люблю тваринок і якось так сталось, що зі мною живе «чотири вершники апокаліпсису»:</h1>
-  <p>Some news this fine day!</p> 
+
+
+<div class="container">
+    <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/23.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/24.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/25.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/26.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/27.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="images/10.jpg" style="width:100%" onclick="currentSlide(1)" alt="Текіла">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/23.jpg" style="width:100%" onclick="currentSlide(2)" alt="Текіла">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/24.jpg" style="width:100%" onclick="currentSlide(3)" alt="Текіла">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/25.jpg" style="width:100%" onclick="currentSlide(4)" alt="Текіла">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/26.jpg" style="width:100%" onclick="currentSlide(5)" alt="Текіла">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/27.jpg" style="width:100%" onclick="currentSlide(6)" alt="Текіла">
+        </div>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
+
+<p>Маленька чорна киця, що постійно робить шкоду. На її рахунку вбито більше трьох вазонків, одна розбита
+    склянка, купу подертого одягу, рук і ніг та з'їджений жук-смердюк, вкрала нагетс о 5 ранку, через неї
+    довелось купувати нову шафу і викидати кілька пар взуття.</p>
+<p>Їй всього лиш 3 місяці, а вже робить стільки шкоди, вона була фактично вуличною і з купою бліх, але
+    поводить себе так, ніби з вулиці я, хоча всеодно її дуже люблю.</p>
 </div>
 
 <div id="Facts" class="tabcontent">
@@ -406,103 +457,6 @@ document.getElementById("defaultOpen").click();
 </body>
 </html> 
 
-<h2 style="text-align:center">Slideshow Gallery</h2>
-
-<div class="container">
-    <div class="mySlides">
-        <div class="numbertext">1 / 6</div>
-        <img src="img_woods_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">2 / 6</div>
-        <img src="img_5terre_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">3 / 6</div>
-        <img src="img_mountains_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">4 / 6</div>
-        <img src="img_lights_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">5 / 6</div>
-        <img src="img_nature_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">6 / 6</div>
-        <img src="img_snow_wide.jpg" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-
-    <div class="caption-container">
-        <p id="caption"></p>
-    </div>
-
-    <div class="row">
-        <div class="column">
-            <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)"
-                alt="Cinque Terre">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)"
-                alt="Mountains and fjords">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)"
-                alt="Northern Lights">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)"
-                alt="Nature and sunrise">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)"
-                alt="Snowy Mountains">
-        </div>
-    </div>
-</div>
-
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
-</script>
 
 </body>
 
