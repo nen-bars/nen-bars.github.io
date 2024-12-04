@@ -9,12 +9,12 @@ body {
 
 h1 {
   font-size: 35pt;
-  color: #c9e1f3;
+  color: #464646;
 }
 
 h2 {
   font-size: 30pt;
-  color: #7fb3d4;
+  color: #c1c9cd;
 }
 
 h3 {
@@ -22,12 +22,12 @@ h3 {
 }
 
 ul {
-  color: rgb(169, 201, 215);
+  color: rgb(114, 114, 114);
   font-size: large;
 }
 
 p {
-  color: rgb(169, 201, 215);
+  color: rgb(114, 114, 114);
   font-size: x-large;
 }
 
@@ -143,8 +143,8 @@ img {
 
 /* Style tab links */
 .tablink {
-  background-color: #213d57;
-  color: rgb(154, 186, 214);
+  background-color: #989aa1;
+  color: rgb(51, 54, 61);
   font-family: "Noto Sans Mono", serif;
   float: left;
   border: none;
@@ -156,7 +156,7 @@ img {
 }
 
 .tablink:hover {
-  background-color: #132c43;
+  background-color: #a4a9ae;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -168,7 +168,7 @@ img {
 }
 
 #Home {
-  background-color: #46667f;
+  background-color: #e0e4e7;
 }
 
 #Pets {
@@ -176,11 +176,11 @@ img {
 }
 
 #Facts {
-  background-color: #577d9a;
+  background-color: #e0e4e7;
 }
 
 #Contact {
-  background-color: #314a5f;
+  background-color: #666a71;
 }
 
 .cremea {
