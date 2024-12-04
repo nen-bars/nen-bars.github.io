@@ -14,7 +14,7 @@ h1 {
 
 h2 {
   font-size: 30pt;
-  color: #d8dfe3;
+  color: #bacad7;
 }
 
 h3 {
@@ -36,6 +36,11 @@ p2 {
   font-size: x-large;
 }
 
+p3 {
+    color: #5d6062;
+    font-size: 17.5pt;
+}
+
 .fa {
   padding: 5%;
   font-size: 100px;
@@ -43,7 +48,7 @@ p2 {
   text-align: center;
   text-decoration: none;
   margin: 33px;
-  color: #5a6b7d;
+  color: #5c6e7e;
 }
 
 .fa:hover {
@@ -185,7 +190,7 @@ img {
 }
 
 #Contact {
-  background-color: #989ca3;
+  background-color: #e0e4e7;
 }
 
 .cremea {
