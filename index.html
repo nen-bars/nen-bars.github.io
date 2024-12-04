@@ -2,291 +2,306 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> who is nen? </title>
-    <link href="https://fonts.googleapis.com/css?family=Jura:300,regular,500,600,700" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> who is nen? </title>
+  <link href="https://fonts.googleapis.com/css?family=Jura:300,regular,500,600,700" rel="stylesheet" />
 
-    <meta name="description" content="невеличкий сайт про нен і її захоплення">
-    <meta property="og:image" content="https://nen-bars.github.io/images/15.jpg">
-    <link rel="shortcut icon" href="https://nen-bars.github.io/images/favicon.ico">
-    <link rel="stylesheet" type="text/css">
-   
+  <meta name="description" content="невеличкий сайт про нен і її захоплення">
+  <meta property="og:image" content="https://nen-bars.github.io/images/15.jpg">
+  <link rel="shortcut icon" href="https://nen-bars.github.io/images/favicon.ico">
+  <link rel="stylesheet" type="text/css">
+
   <script src="https://kit.fontawesome.com/bc84255d9f.js" crossorigin="anonymous"></script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Noto+Sans+Mono:wght@100..900&display=swap"
-  rel="stylesheet">
-<head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
- 
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Noto+Sans+Mono:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+  </head>
 
   <style>
     body {
-max-width: 800px;
-margin: 0 auto;
-}
-    
-
-.fa {
-  padding: 5%;
-  font-size: 100px;
-  width: 100px;
-  text-align: center;
-  text-decoration: none;
-  margin: 33px;
-  color: #7fb3d4;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
 
-* {
-  box-sizing: border-box;
-}
+    .fa {
+      padding: 5%;
+      font-size: 100px;
+      width: 100px;
+      text-align: center;
+      text-decoration: none;
+      margin: 33px;
+      color: #7fb3d4;
+    }
 
-body {
- font-family: "Jura", serif;
-}
+    .fa:hover {
+      opacity: 0.7;
+    }
 
-img {
-  vertical-align: middle;
-}
 
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
+    body {
+      font-family: "Jura", serif;
+    }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
+    img {
+      vertical-align: middle;
+    }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+      max-width: 800px;
+    }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
 
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #699dbd;
-  padding: 2px 16px;
-  color: white;
-}
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
 
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #699dbd;
+      padding: 2px 16px;
+      color: white;
+    }
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
 
     /* Style tab links */
-.tablink {
-  background-color: #213d57;
-  color: rgb(154, 186, 214);
-    font-family: "Noto Sans Mono", serif;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
+    .tablink {
+      background-color: #213d57;
+      color: rgb(154, 186, 214);
+      font-family: "Noto Sans Mono", serif;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+    }
 
-.tablink:hover {
-  background-color: #132c43;
-}
+    .tablink:hover {
+      background-color: #132c43;
+    }
 
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: rgb(255, 255, 255);
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
-}
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      color: rgb(255, 255, 255);
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+    }
 
-#Home {background-color: #46667f;}
-#Pets {background-color: #34526b;}
-#Facts {background-color: #577d9a;}
-#Contact {background-color: #314a5f;}
-    
-    </style>
+    #Home {
+      background-color: #46667f;
+    }
+
+    #Pets {
+      background-color: #34526b;
+    }
+
+    #Facts {
+      background-color: #577d9a;
+    }
+
+    #Contact {
+      background-color: #314a5f;
+    }
+  </style>
 
 </head>
 
 <body>
- 
-<button class="tablink" onclick="openPage('Home', this, '#46667f')"id="defaultOpen">про мене</button>
-<button class="tablink" onclick="openPage('Pets', this, '#34526b')">армагедон</button>
-<button class="tablink" onclick="openPage('Facts', this, '#577d9a')">цікавинки</button>
-<button class="tablink" onclick="openPage('Contact', this, '#314a5f')">зв'язочок</button>
 
-<div id="Home" class="tabcontent">
-  <h1>Хто така нен?</h1>
-  <img src="images/1.jpg" width="100%">
-  <h3>Мені 18 років, родом я з-під Львова, точніше з військового містечка Ковирі, тому більшість моїх родичів військові.</h3>
-  <img src="images/33.png" width="100%">
- 
-<h3>Тільки тато та його сестра мали хист до малювання та музики, зокрема тітка навчалась в тому ж <a
+  <button class="tablink" onclick="openPage('Home', this, '#46667f')" id="defaultOpen">про мене</button>
+  <button class="tablink" onclick="openPage('Pets', this, '#34526b')">армагедон</button>
+  <button class="tablink" onclick="openPage('Facts', this, '#577d9a')">цікавинки</button>
+  <button class="tablink" onclick="openPage('Contact', this, '#314a5f')">зв'язочок</button>
+
+  <div id="Home" class="tabcontent">
+    <h1>Хто така нен?</h1>
+    <img src="images/1.jpg" width="100%">
+    <p>Мені 18 років, родом я з-під Львова, точніше з військового містечка Ковирі, тому більшість моїх родичів
+      військові.</p>
+    <img src="images/33.png" width="100%">
+
+    <p>Тільки тато та його сестра мали хист до малювання та музики, зокрема тітка навчалась в тому ж <a
         href="https://www.artcollege.lviv.ua/" target="_blank">коледжі</a> де я. Гадаю творчістю пішла в них, тому
-    деякі мої хоббі:
-    <li>малювання</li>
-    <li>трохи грала на фортепіано та іноді опановую синтезатор</li>
-    <li>фото на випадково знайдену стару цифрову камеру </li>
-    <li>іноді шиття та в’язання невеликих речей</li>
-    <li> колись тато набивав сам собі татуювання і також маю тату-машинку</li>
-    <li>вчусь стрільби з професійного луку</li>
-    <li>працювала барменом/офіціантом, тому роблю непогані коктейлі</li>
-</h3>
-<img src="images/2.jpg" width="24%">
-<img src="images/3.jpg" width="24%">
-<img src="images/4.jpg" width="24%">
-<img src="images/5.jpg" width="24%"> <br> <br> <br>
-</div>
-<style>
-   
-</style>
+      деякі мої хоббі:
+    <ul>
+      <li>малювання</li>
+      <li>трохи грала на фортепіано та іноді опановую синтезатор</li>
+      <li>фото на випадково знайдену стару цифрову камеру </li>
+      <li>іноді шиття та в’язання невеликих речей</li>
+      <li> колись тато набивав сам собі татуювання і також маю тату-машинку</li>
+      <li>вчусь стрільби з професійного луку</li>
+      <li>працювала барменом/офіціантом, тому роблю непогані коктейлі</li>
+    </ul>
+    </p>
+    <img src="images/2.jpg" width="24%">
+    <img src="images/3.jpg" width="24%">
+    <img src="images/4.jpg" width="24%">
+    <img src="images/5.jpg" width="24%"> <br> <br> <br>
+  </div>
+  <style>
 
-<div id="Pets" class="tabcontent">
-  <h1>Також я дуже люблю тваринок і якось так сталось, що зі мною живе «чотири вершники апокаліпсису»:</h1>
+  </style>
+
+  <div id="Pets" class="tabcontent">
+    <p>Також я дуже люблю тваринок і якось так сталось, що зі мною живе «чотири вершники апокаліпсису»:</p>
 
 
-<div class="container">
-    <div class="mySlides">
+    <div class="container">
+      <div class="mySlides">
         <div class="numbertext">1 / 6</div>
         <img src="images/10.jpg" style="width:100%">
-    </div>
+      </div>
 
-    <div class="mySlides">
+      <div class="mySlides">
         <div class="numbertext">2 / 6</div>
         <img src="images/24.jpg" style="width:100%">
-    </div>
+      </div>
 
-    <div class="mySlides">
+      <div class="mySlides">
         <div class="numbertext">3 / 6</div>
         <img src="images/13.jpg" style="width:100%">
-    </div>
+      </div>
 
-    <div class="mySlides">
+      <div class="mySlides">
         <div class="numbertext">4 / 6</div>
         <img src="images/29.jpg" style="width:100%">
-    </div>
+      </div>
 
-    <div class="mySlides">
+      <div class="mySlides">
         <div class="numbertext">5 / 6</div>
         <img src="images/11.jpg" style="width:100%">
-    </div>
+      </div>
 
-    <div class="mySlides">
+      <div class="mySlides">
         <div class="numbertext">6 / 6</div>
         <img src="images/12.jpg" style="width:100%">
-    </div>
+      </div>
 
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
 
-    <div class="caption-container">
+      <div class="caption-container">
         <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/10.jpg" style="width:100%" onclick="currentSlide(1)" alt="Текіла">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/24.jpg" style="width:100%" onclick="currentSlide(2)" alt="Текіла">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/13.jpg" style="width:100%" onclick="currentSlide(3)" alt="Їжачиха">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/29.jpg" style="width:100%" onclick="currentSlide(4)" alt="Їжачиха">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/11.jpg" style="width:100%" onclick="currentSlide(5)" alt="Томі">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/12.jpg" style="width:100%" onclick="currentSlide(6)" alt="Пабло Ескобар">
+        </div>
+      </div>
     </div>
 
-    <div class="row">
-        <div class="column">
-            <img class="demo cursor" src="images/10.jpg" style="width:100%" onclick="currentSlide(1)" alt="Текіла">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="images/24.jpg" style="width:100%" onclick="currentSlide(2)" alt="Текіла">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="images/13.jpg" style="width:100%" onclick="currentSlide(3)" alt="Їжачиха">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="images/29.jpg" style="width:100%" onclick="currentSlide(4)" alt="Їжачиха">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="images/11.jpg" style="width:100%" onclick="currentSlide(5)" alt="Томі">
-        </div>
-        <div class="column">
-            <img class="demo cursor" src="images/12.jpg" style="width:100%" onclick="currentSlide(6)" alt="Пабло Ескобар">
-        </div>
-    </div>
-</div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
 
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
+      function plusSlides(n) {
         showSlides(slideIndex += n);
-    }
+      }
 
-    function currentSlide(n) {
+      function currentSlide(n) {
         showSlides(slideIndex = n);
-    }
+      }
 
-    function showSlides(n) {
+      function showSlides(n) {
         let i;
         let slides = document.getElementsByClassName("mySlides");
         let dots = document.getElementsByClassName("demo");
@@ -294,108 +309,121 @@ img {
         if (n > slides.length) { slideIndex = 1 }
         if (n < 1) { slideIndex = slides.length }
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+          slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
         captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
-</script>
+      }
+    </script>
 
-<h2>Текіла</h2>
-<h3>Маленька чорна киця, що постійно робить шкоду. На її рахунку вбито більше трьох вазонків, одна розбита
-склянка, купу подертого одягу, рук і ніг та з'їджений жук-смердюк, вкрала нагетс о 5 ранку, через неї
-довелось купувати нову шафу і викидати кілька пар взуття. <br> Їй всього лиш 3 місяці, а вже робить стільки шкоди, вона була фактично вуличною і з купою бліх, але
-поводить себе так, ніби з вулиці я, хоча всеодно її дуже люблю.</h3> <br>
-<h2>Їжачиха</h2>
-<h3>Найстарша жителька це альбінос Їжачишка, їй вже 6 років. Якось її купили дітям, яким через місяць вона
-набридла і її виставии на OLX, з надписом обміняю на фрукти, тому її ціна 2 кг бананів і 2 грейпфрута. <br> Вона поводить себе як старий дід і ненавидить всіх, а ще в неї залишилось лише 2 зуба. </h3> <br>
-<h2>Томі</h2>
-<h3>Це війчастий гекон бананоїд Томі, або ще відомий як Томус, Томик та багато інших співкороневих слів. <br>
-Йому вже 3 роки, зазвичай спокійний, але іноді ловить якісь хвилі з космосу і починає бігати туди сюди,
-    одного разу заліз до стелі. <br> Коли він був малим я дуже переживала, щоб він їв і годувала самотужки, так сталося, що він виріс, але вже
-    звик коли його годують з ложечки і відмовляється їсти сам.</h3> <br>
-<h2>Пабло Ескобар</h2> 
-    <h3>Він відноситься до маїсових полозів, тому не отруйний та не кусається, якщо не відчуває небезпеки.
-Переважно водяться в кукурудзяних (маїс - кукурудза з мексиканської) полях Мексики, звідси його ім'я в честь колумбійського наркобарона, не питайте чому так, логіка була відсутня, коли придумувалось ім'я. <br>
- Їсть він переважно мишок, тому в морозилці, окрім курки, є ще мишатина)))</h3>
-</div>
+    <h2>Текіла</h2>
+    <p>Маленька чорна киця, що постійно робить шкоду. На її рахунку вбито більше трьох вазонків, одна розбита
+      склянка, купу подертого одягу, рук і ніг та з'їджений жук-смердюк, вкрала нагетс о 5 ранку, через неї
+      довелось купувати нову шафу і викидати кілька пар взуття. <br> Їй всього лиш 3 місяці, а вже робить стільки шкоди,
+      вона була фактично вуличною і з купою бліх, але
+      поводить себе так, ніби з вулиці я, хоча всеодно її дуже люблю.</p> <br>
+    <h2>Їжачиха</h2>
+    <p>Найстарша жителька це альбінос Їжачишка, їй вже 6 років. Якось її купили дітям, яким через місяць вона
+      набридла і її виставии на OLX, з надписом обміняю на фрукти, тому її ціна 2 кг бананів і 2 грейпфрута. <br> Вона
+      поводить себе як старий дід і ненавидить всіх, а ще в неї залишилось лише 2 зуба. </p> <br>
+    <h2>Томі</h2>
+    <p>Це війчастий гекон бананоїд Томі, або ще відомий як Томус, Томик та багато інших співкороневих слів. <br>
+      Йому вже 3 роки, зазвичай спокійний, але іноді ловить якісь хвилі з космосу і починає бігати туди сюди,
+      одного разу заліз до стелі. <br> Коли він був малим я дуже переживала, щоб він їв і годувала самотужки, так
+      сталося, що він виріс, але вже
+      звик коли його годують з ложечки і відмовляється їсти сам.</p> <br>
+    <h2>Пабло Ескобар</h2>
+    <p>Він відноситься до маїсових полозів, тому не отруйний та не кусається, якщо не відчуває небезпеки.
+      Переважно водяться в кукурудзяних (маїс - кукурудза з мексиканської) полях Мексики, звідси його ім'я в честь
+      колумбійського наркобарона, не питайте чому так, логіка була відсутня, коли придумувалось ім'я. <br>
+      Їсть він переважно мишок, тому в морозилці, окрім курки, є ще мишатина)))</p>
+  </div>
 
-<div id="Facts" class="tabcontent">
-<h1>Кілька фактів про мене:</h1>
-  <h3><li>кілька років фарбуюсь в синій колір, скільки не пробувала інші кольори - завжди вертаюся до нього</li>
-<li>маю трохи східної крові, бабуся та дідусь родом з Узбекистану, мій тато також народився там у місті
-    Самарканд, мама етнічна українка, але народилась в Угорщині через постійні військові відрядження її батьків
-</li>
-<li>маю 8 татуювань, але планую збільшити їх кількість</li>
-<li>через деяку проблему з рукою в дитинстві частково стала амбідекстером, могла писати двома руками одночасно
-    та поодинці</li>
-<li>попри мій трохи нестандартний вигляд або як його називають бабусі під під‘їздом «сатанинський», паралельно
-    зі звичайною школою вчилась і закінчила на відмінно школу катихизму при храмі</li>
-<li>не маю зубів мудрості і в мене вони ніколи не виростуть</li>
-<li>трішки гадаю на картах таро</li>
-</h3>
-<h3>Ще одне моє головне хоббі це збирання гербарію і якихось шишок чи каштанів з різних лісів чи міст. Ось кілька
-    прикладів: </h3>
-<img src="images/6.jpg" width="49%">
-<img src="images/7.jpg" width="49%">
-<img src="images/8.jpg" width="49%">
-<img src="images/9.jpg" width="49%"> <br> <br>
-</div>
+  <div id="Facts" class="tabcontent">
+    <h1>Кілька фактів про мене:</h1>
+    <p>
+      <li>кілька років фарбуюсь в синій колір, скільки не пробувала інші кольори - завжди вертаюся до нього</li>
+      <li>маю трохи східної крові, бабуся та дідусь родом з Узбекистану, мій тато також народився там у місті
+        Самарканд, мама етнічна українка, але народилась в Угорщині через постійні військові відрядження її батьків
+      </li>
+      <li>маю 8 татуювань, але планую збільшити їх кількість</li>
+      <li>через деяку проблему з рукою в дитинстві частково стала амбідекстером, могла писати двома руками одночасно
+        та поодинці</li>
+      <li>попри мій трохи нестандартний вигляд або як його називають бабусі під під‘їздом «сатанинський», паралельно
+        зі звичайною школою вчилась і закінчила на відмінно школу катихизму при храмі</li>
+      <li>не маю зубів мудрості і в мене вони ніколи не виростуть</li>
+      <li>трішки гадаю на картах таро</li>
+    </p>
+    <p>Ще одне моє головне хоббі це збирання гербарію і якихось шишок чи каштанів з різних лісів чи міст. Ось кілька
+      прикладів: </p>
+    <img src="images/6.jpg" width="49%">
+    <img src="images/7.jpg" width="49%">
+    <img src="images/8.jpg" width="49%">
+    <img src="images/9.jpg" width="49%"> <br> <br>
+  </div>
 
-<div id="Contact" class="tabcontent">
-  <a href=" https://www.instagram.com/ssadnas/profilecard/?igsh=MTJmaXM5a3hia205Yg==" class="fa fa-instagram"></a>
-  <a href="https://t.me/ssadnas" class="fa fa-telegram"></a>
-  <a href="https://youtube.com/channel/UCPz-AqBuJ60OAah3DtIYAKg?si=pQ-khjN025Z9knII" class="fa fa-youtube"></a>
-  <a href="https://www.reddit.com/u/Capital_Wrangler_979/s/qxnJWJdNSg" class="fa fa-reddit"></a>
-  
-<h2> 
-    <center>
+  <div id="Contact" class="tabcontent">
+    <a href=" https://www.instagram.com/ssadnas/profilecard/?igsh=MTJmaXM5a3hia205Yg==" class="fa fa-instagram"></a>
+    <a href="https://t.me/ssadnas" class="fa fa-telegram"></a>
+    <a href="https://youtube.com/channel/UCPz-AqBuJ60OAah3DtIYAKg?si=pQ-khjN025Z9knII" class="fa fa-youtube"></a>
+    <a href="https://www.reddit.com/u/Capital_Wrangler_979/s/qxnJWJdNSg" class="fa fa-reddit"></a>
+
+    <div>
+    
         <img src="images/14.jpg" width="50%">
         <h2>(фото бонусом з Криму 2012 року)</h2>
-    </center>
-</h2>
-</div>
+     
+    </div>
+  </div>
 
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-      
-                
-            <style>
-                body {
-                    background-color: #c3d6e8;
-                }
-            </style>
-</div>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
 
-    <style>
-        h1 {
-            color: #c9e1f3;
-        }
-        h2 {color: #7fb3d4;}
-        h3 {color: rgb(169, 201, 215);
-        }
-        p {color: aliceblue;}
-    </style>
+
+  <style>
+    body {
+      background-color: #c3d6e8;
+    }
+  </style>
+  </div>
+
+  <style>
+    h1 {
+      color: #c9e1f3;
+    }
+
+    h2 {
+      color: #7fb3d4;
+    }
+
+    h3 {
+      color: rgb(169, 201, 215);
+    }
+
+    p {
+      color:rgb(169, 201, 215);
+    }
+  </style>
 
 
 </body>
