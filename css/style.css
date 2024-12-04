@@ -4,7 +4,7 @@ body {
 }
 
 body {
-  background-color: #c3d6e8;
+  background-color: #82878a;
 }
 
 h1 {
@@ -31,6 +31,11 @@ p {
   font-size: x-large;
 }
 
+p2 {
+  color: rgb(162, 177, 199);
+  font-size: x-large;
+}
+
 .fa {
   padding: 5%;
   font-size: 100px;
@@ -38,7 +43,7 @@ p {
   text-align: center;
   text-decoration: none;
   margin: 33px;
-  color: #7fb3d4;
+  color: #dee5e9;
 }
 
 .fa:hover {
@@ -114,7 +119,7 @@ img {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #699dbd;
+  background-color: #a6b7bf;
   padding: 2px 16px;
   color: white;
 }
