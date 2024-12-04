@@ -23,7 +23,7 @@ h3 {
 
 ul {
   color: rgb(114, 114, 114);
-  font-size: large;
+  font-size: x-large;
 }
 
 p {
@@ -163,6 +163,7 @@ img {
   padding: 14px 16px;
   font-size: 17px;
   width: 25%;
+
 }
 
 .tablink:hover {
